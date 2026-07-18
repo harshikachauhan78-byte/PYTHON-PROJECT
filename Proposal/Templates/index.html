@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>For Someone Special ❤️</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+<div class="container">
+    <h1>❤️ Will You Be My Forever? ❤️</h1>
+
+    <p>
+        Every moment with you makes life brighter.
+        Would you like to continue this journey with me?
+    </p>
+
+    <div class="buttons">
+        <a href="/yes">
+            <button class="yes">Yes ❤️</button>
+        </a>
+
+        <button class="no" id="noBtn">No 😅</button>
+    </div>
+</div>
+
+<script>
+const noBtn = document.getElementById("noBtn");
+
+noBtn.addEventListener("mouseover", function() {
+    noBtn.style.position = "absolute";
+    noBtn.style.left = Math.random() * (window.innerWidth - 100) + "px";
+    noBtn.style.top = Math.random() * (window.innerHeight - 50) + "px";
+});
+</script>
+
+</body>
+</html>
